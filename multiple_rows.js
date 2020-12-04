@@ -81,7 +81,7 @@ class TransactionTable extends React.Component {
     var allrows = [];
     for (var i = 0; i < this.props.rows.length; i++) {
       allrows.push(this.bankTransactionRow(i));
-      //show or hide paypal integrations
+      //show or hide paypal transactions
       if (this.state.expandedRowIds.includes(i)) {
         const paypalTransactionsForRow = this.paypalTransactions(i);
         for (var j = 0; j < paypalTransactionsForRow.length; j++) {
